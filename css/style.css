@@ -1,0 +1,144 @@
+main {
+  font-family: "League Spartan";
+}
+
+.main_section {
+  background-color: #263257;
+  min-height: 100vh;
+}
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-end {
+  justify-content: end;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.calculator_box {
+  width: 540px;
+}
+.mb-32 {
+  margin-bottom: 32px;
+}
+.calculator_header {
+  color: #fff;
+}
+.title {
+  font-size: 32px;
+}
+.theme_title {
+  padding-top: 25px;
+  margin-right: 26px;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.switcher_box {
+  width: 71px;
+}
+.numbers_block {
+  padding: 0 7px;
+  margin-bottom: 5px;
+}
+.switcher_button_block {
+  width: 71px;
+  height: 26px;
+  background-color: #242d44;
+  border-radius: 18px;
+}
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+
+.circle {
+  height: 16px;
+  width: 16px;
+  appearance: none;
+  background-color: #d03f2f;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  cursor: pointer;
+}
+.three-state-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #242d44;
+  height: 26px;
+  width: 71px;
+  border-radius: 20px;
+}
+#one {
+  opacity: 1;
+}
+.calculator_desk {
+  height: 128px;
+  background-color: #181f33;
+  text-align: end;
+  padding: 0px 32px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 56px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+.calculator_board {
+  background-color: #242d44;
+  border-radius: 20px;
+  padding: 32px 30px;
+  gap: 24px;
+}
+
+.number {
+  width: 101px;
+  height: 64px;
+  border-radius: 10px;
+  background-color: #eae3dc;
+  box-shadow: inset 0px -4px 0px #b3a497;
+  font-size: 40px;
+  color: #434a59;
+  font-family: "League Spartan";
+}
+.deleteBtn {
+  width: 101px;
+  height: 64px;
+  border-radius: 10px;
+  font-size: 28px;
+  color: #fff;
+  background-color: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+  font-family: "League Spartan";
+}
+
+.btn {
+  width: 227px;
+  height: 64px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 28px;
+  font-family: "League Spartan";
+}
+.resetBtn {
+  background-color: #647198;
+  box-shadow: inset 0px -4px 0px #414e73;
+}
+.equalBtn {
+  background-color: #d03f2f;
+  box-shadow: inset 0px -4px 0px #93261a;
+}
