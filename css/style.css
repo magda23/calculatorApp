@@ -142,3 +142,83 @@ main {
   background-color: #d03f2f;
   box-shadow: inset 0px -4px 0px #93261a;
 }
+
+/*white bg*/
+
+.main_section_white {
+  background-color: #e6e6e6;
+}
+.calculator_header_white {
+  color: #36362c;
+}
+.three_state_toggle_light {
+  background-color: #d2cdcd;
+}
+.calculatorMain_light_color {
+  background-color: #fff;
+  color: #36362c;
+}
+.calculator_board_light_color {
+  background-color: #d2cdcd;
+}
+.numbers_light {
+  color: #36362c;
+  background-color: #e5e4e1;
+  box-shadow: inset 0px -4px 0px #a79e91;
+}
+.deleteBtn_light {
+  background-color: #378187;
+  box-shadow: inset 0px -4px 0px #1b6066;
+}
+.resetBtn_light {
+  background-color: #378187;
+  box-shadow: inset 0px -4px 0px #1b6066;
+}
+.equalBtn_light {
+  background-color: #c85402;
+  box-shadow: inset 0px -4px 0px #873901;
+}
+.circle_light {
+  background-color: #c85402;
+}
+
+/*purple bg*/
+
+.main_section_purple {
+  background-color: #17062a;
+}
+.calculator_header_purple {
+  color: #ffe53d;
+}
+.three_state_toggle_purple {
+  background-color: #1e0936;
+  color: #ffe53d;
+}
+.calculatorMain_purple_color {
+  background-color: #1e0936;
+  color: #ffe53d;
+}
+.calculator_board_purple_color {
+  background-color: #1e0936;
+}
+.numbers_purple {
+  color: #ffe53d;
+  background-color: #331c4d;
+  box-shadow: inset 0px -4px 0px #881c9e;
+}
+.deleteBtn_purple {
+  background-color: #56077c;
+  box-shadow: inset 0px -4px 0px #be15f4;
+}
+.resetBtn_purple {
+  background-color: #56077c;
+  box-shadow: inset 0px -4px 0px #be15f4;
+}
+.equalBtn_purple {
+  color: #1a2327;
+  background-color: #00ded0;
+  box-shadow: inset 0px -4px 0px #6cf9f1;
+}
+.circle_purple {
+  background-color: #00ded0;
+}

@@ -2,7 +2,7 @@ let buttons = document.querySelectorAll(".button");
 let arr = [...buttons];
 let mainSection = document.querySelector(".main_section");
 let calculatorHeader = document.querySelector(".calculator_header");
-let calculatorDesk = document.querySelector(".calculator_write_board");
+let calculatorDesk = document.querySelector(".calculator_desk");
 let numbers = document.querySelectorAll(".number");
 let operators = document.querySelectorAll(".operator");
 let resetBtn = document.querySelector(".resetBtn");
@@ -16,71 +16,105 @@ let circleBtns = document.querySelectorAll(".circle");
 arr.forEach((element, index) => {
   element.addEventListener("click", () => {
     element.style.opacity = "1";
-    if (index == 0) {
-      mainSection.style.backgroundColor = "#263257";
-      calculatorHeader.style.color = "#fff";
-      threeStateToggle.style.backgroundColor = "#242D44";
-      calculatorMain.style.backgroundColor = "#181F33";
-      calculatorMain.style.color = "#fff";
-      calculatorBoard.style.backgroundColor = "#242d44";
+    if (index == 1) {
+      mainSection.classList.add("main_section_white");
+      threeStateToggle.classList.add("three_state_toggle_light");
+      calculatorHeader.classList.add("calculator_header_white");
+      calculatorDesk.classList.add("calculatorMain_light_color");
+      calculatorBoard.classList.add("calculator_board_light_color");
       numbers.forEach((item) => {
-        item.style.color = "#434A59";
-        item.style.backgroundColor = "#EAE3DC";
-        item.style.boxShadow = "inset 0px -4px 0px #b3a497";
+        item.classList.add("numbers_light");
       });
-      deleteBtn.style.backgroundColor = "#647198";
-      deleteBtn.style.boxShadow = "inset 0px -4px 0px #414e73";
-      resetBtn.style.backgroundColor = "#647198";
-      resetBtn.style.boxShadow = "inset 0px -4px 0px #414E73";
-      eqaulBtn.style.backgroundColor = "#d03f2f";
-      eqaulBtn.style.boxShadow = "inset 0px -4px 0px #93261a";
+      deleteBtn.classList.add("deleteBtn_light");
+      eqaulBtn.classList.add("equalBtn_light");
+      resetBtn.classList.add("resetBtn_light");
       circleBtns.forEach((circle) => {
-        circle.style.backgroundColor = "#D03F2F";
+        circle.classList.add("circle_light");
       });
-    } else if (index == 1) {
-      mainSection.style.backgroundColor = "#E6E6E6";
-      calculatorHeader.style.color = "#36362C";
-      threeStateToggle.style.backgroundColor = "#D2CDCD";
-      calculatorMain.style.backgroundColor = "#fff";
-      calculatorMain.style.color = "#36362C";
-      calculatorBoard.style.backgroundColor = "#D2CDCD";
+      mainSection.classList.remove("main_section_purple");
+      threeStateToggle.classList.remove("three_state_toggle_purple");
+      calculatorHeader.classList.remove("calculator_header_purple");
+      calculatorDesk.classList.remove("calculatorMain_purple_color");
+      calculatorBoard.classList.remove("calculator_board_purple_color");
       numbers.forEach((item) => {
-        item.style.color = "#36362C";
-        item.style.backgroundColor = "#E5E4E1";
-        item.style.boxShadow = "inset 0px -4px 0px #A79E91";
+        item.classList.remove("numbers_purple");
       });
-      deleteBtn.style.backgroundColor = "#378187";
-      deleteBtn.style.boxShadow = "inset 0px -4px 0px #1B6066";
-      resetBtn.style.backgroundColor = "#378187";
-      resetBtn.style.boxShadow = "inset 0px -4px 0px #1B6066";
-      eqaulBtn.style.backgroundColor = "#C85402";
-      eqaulBtn.style.boxShadow = "inset 0px -4px 0px #873901";
+      deleteBtn.classList.remove("deleteBtn_purple");
+      eqaulBtn.classList.remove("equalBtn_purple");
+      resetBtn.classList.remove("resetBtn_purple");
       circleBtns.forEach((circle) => {
-        circle.style.backgroundColor = "#C85402";
+        circle.classList.remove("circle_purple");
+      });
+    } else if (index == 2) {
+      mainSection.classList.add("main_section_purple");
+      threeStateToggle.classList.add("three_state_toggle_purple");
+      calculatorHeader.classList.add("calculator_header_purple");
+      calculatorDesk.classList.add("calculatorMain_purple_color");
+      calculatorBoard.classList.add("calculator_board_purple_color");
+      numbers.forEach((item) => {
+        item.classList.add("numbers_purple");
+      });
+      deleteBtn.classList.add("deleteBtn_purple");
+      eqaulBtn.classList.add("equalBtn_purple");
+      resetBtn.classList.add("resetBtn_purple");
+      circleBtns.forEach((circle) => {
+        circle.classList.add("circle_purple");
+      });
+      mainSection.classList.remove("main_section_white");
+      threeStateToggle.classList.remove("three_state_toggle_light");
+      calculatorHeader.classList.remove("calculator_header_white");
+      calculatorDesk.classList.remove("calculatorMain_light_color");
+      calculatorBoard.classList.remove("calculator_board_light_color");
+      numbers.forEach((item) => {
+        item.classList.remove("numbers_light");
+      });
+      deleteBtn.classList.remove("deleteBtn_light");
+      eqaulBtn.classList.remove("equalBtn_light");
+      resetBtn.classList.remove("resetBtn_light");
+      circleBtns.forEach((circle) => {
+        circle.classList.remove("circle_light");
       });
     } else {
-      mainSection.style.backgroundColor = "#17062A";
-      calculatorHeader.style.color = "#FFE53D";
-      threeStateToggle.style.backgroundColor = "#1E0936";
-      calculatorMain.style.backgroundColor = "#1E0936";
-      calculatorMain.style.color = "#FFE53D";
-      calculatorBoard.style.backgroundColor = "#1E0936";
+      mainSection.classList.add("main_section");
+      calculatorHeader.classList.add("calculator_header");
+      calculatorDesk.classList.add("calculator_write_board");
       numbers.forEach((item) => {
-        item.style.color = "#FFE53D";
-        item.style.backgroundColor = "#331C4D";
-        item.style.boxShadow = "inset 0px -4px 0px #881C9E";
+        item.classList.add("number");
       });
-      deleteBtn.style.backgroundColor = "#56077C";
-      deleteBtn.style.boxShadow = "inset 0px -4px 0px #BE15F4";
-      resetBtn.style.backgroundColor = "#56077C";
-      resetBtn.style.boxShadow = "inset 0px -4px 0px #BE15F4";
-      eqaulBtn.style.color = "#1A2327";
-      eqaulBtn.style.backgroundColor = "#00DED0";
-      eqaulBtn.style.boxShadow = "inset 0px -4px 0px #6CF9F1";
+      deleteBtn.classList.add("deleteBtn");
+      eqaulBtn.classList.add("eqaulBtn");
+      resetBtn.classList.add("resetBtn");
       circleBtns.forEach((circle) => {
-        circle.style.backgroundColor = "#00DED0";
+        circle.classList.add("circle");
       });
-      console.log(circleBtns);
+      mainSection.classList.remove("main_section_white");
+      threeStateToggle.classList.remove("three_state_toggle_light");
+      calculatorHeader.classList.remove("calculator_header_white");
+      calculatorDesk.classList.remove("calculatorMain_light_color");
+      calculatorBoard.classList.remove("calculator_board_light_color");
+      numbers.forEach((item) => {
+        item.classList.remove("numbers_light");
+      });
+      deleteBtn.classList.remove("deleteBtn_light");
+      eqaulBtn.classList.remove("equalBtn_light");
+      resetBtn.classList.remove("resetBtn_light");
+      circleBtns.forEach((circle) => {
+        circle.classList.remove("circle_light");
+      });
+      mainSection.classList.remove("main_section_purple");
+      threeStateToggle.classList.remove("three_state_toggle_purple");
+      calculatorHeader.classList.remove("calculator_header_purple");
+      calculatorDesk.classList.remove("calculatorMain_purple_color");
+      calculatorBoard.classList.remove("calculator_board_purple_color");
+      numbers.forEach((item) => {
+        item.classList.remove("numbers_purple");
+      });
+      deleteBtn.classList.remove("deleteBtn_purple");
+      eqaulBtn.classList.remove("equalBtn_purple");
+      resetBtn.classList.remove("resetBtn_purple");
+      circleBtns.forEach((circle) => {
+        circle.classList.remove("circle_purple");
+      });
     }
     arr
       .filter(function (item) {
