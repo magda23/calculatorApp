@@ -87,33 +87,35 @@ arr.forEach((element, index) => {
       circleBtns.forEach((circle) => {
         circle.classList.add("circle");
       });
-      mainSection.classList.remove("main_section_white");
-      threeStateToggle.classList.remove("three_state_toggle_light");
-      calculatorHeader.classList.remove("calculator_header_white");
-      calculatorDesk.classList.remove("calculatorMain_light_color");
-      calculatorBoard.classList.remove("calculator_board_light_color");
+      mainSection.classList.remove("main_section_white", "main_section_purple");
+      threeStateToggle.classList.remove(
+        "three_state_toggle_light",
+        "three_state_toggle_purple"
+      );
+      calculatorHeader.classList.remove(
+        "calculator_header_white",
+        "calculator_header_purple"
+      );
+      calculatorDesk.classList.remove(
+        "calculatorMain_light_color",
+        "calculatorMain_purple_color"
+      );
+      calculatorBoard.classList.remove(
+        "calculator_board_light_color",
+        "calculator_board_purple_color"
+      );
       numbers.forEach((item) => {
-        item.classList.remove("numbers_light");
+        item.classList.remove("numbers_light", "numbers_purple");
       });
-      deleteBtn.classList.remove("deleteBtn_light");
-      eqaulBtn.classList.remove("equalBtn_light");
-      resetBtn.classList.remove("resetBtn_light");
+      deleteBtn.classList.remove("deleteBtn_light", "deleteBtn_purple");
+      eqaulBtn.classList.remove("equalBtn_light", "equalBtn_purple");
+      resetBtn.classList.remove("resetBtn_light", "resetBtn_purple");
       circleBtns.forEach((circle) => {
-        circle.classList.remove("circle_light");
-      });
-      mainSection.classList.remove("main_section_purple");
-      threeStateToggle.classList.remove("three_state_toggle_purple");
-      calculatorHeader.classList.remove("calculator_header_purple");
-      calculatorDesk.classList.remove("calculatorMain_purple_color");
-      calculatorBoard.classList.remove("calculator_board_purple_color");
-      numbers.forEach((item) => {
-        item.classList.remove("numbers_purple");
-      });
-      deleteBtn.classList.remove("deleteBtn_purple");
-      eqaulBtn.classList.remove("equalBtn_purple");
-      resetBtn.classList.remove("resetBtn_purple");
-      circleBtns.forEach((circle) => {
-        circle.classList.remove("circle_purple");
+        circle.classList.remove(
+          "circle_light",
+          "numbers_purple",
+          "circle_purple"
+        );
       });
     }
     arr
